@@ -31,7 +31,7 @@ Hospital readmissions are a critical performance indicator in the healthcare ind
 Healthcare-Readmission-Analysis
 │
 ├── Dataset/
-│     └── [clean_healthcare.csv]("https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/clean_healthcare_data.csv")
+│     └── [clean_healthcare.csv](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/clean_healthcare_data.csv)
 │
 ├── SQL/
 │     └── [healthcare_queries.sql]()
@@ -92,7 +92,7 @@ Identified departments with higher readmission frequency.
 - Readmission patterns varied significantly across age segments
 
 ## How to Run
-Python Analysis
+[Python Analysis](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/Healthcare_analysisi.ipynb)
 
 - Open healthcare_analysis.ipynb
 
