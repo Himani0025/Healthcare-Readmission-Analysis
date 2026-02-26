@@ -31,10 +31,10 @@ Hospital readmissions are a critical performance indicator in the healthcare ind
 Healthcare-Readmission-Analysis
 │
 ├── Dataset/
-│     └── clean_healthcare.csv
+│     └── [clean_healthcare.csv]("https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/clean_healthcare_data.csv")
 │
 ├── SQL/
-│     └── healthcare_queries.sql
+│     └── [healthcare_queries.sql]()
 │
 ├── Python/
 │     └── healthcare_analysis.ipynb
