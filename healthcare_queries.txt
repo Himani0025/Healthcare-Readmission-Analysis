@@ -1,0 +1,175 @@
+create database healthcare_2525;
+use healthcare_2525;
+
+create table healthcare (
+encounter_id bigint,
+patient_nbr bigint,
+race varchar(100),
+gender varchar(100),
+age varchar(100),
+admission_type_id int,
+discharge_disposition_id int,
+admission_source_id int,
+time_in_hospital int,
+payer_code varchar(100),
+medical_specialty text null,
+num_lab_procedures int,
+num_procedures int,
+num_medications int null,
+number_outpatient int,
+number_emergency int,
+number_inpatient int,
+diag_1 VARCHAR(100),
+diag_2 VARCHAR(100),
+diag_3 VARCHAR(100),
+number_diagnoses int,
+max_glu_serum varchar(100),
+A1Cresult varchar(100),
+metformin varchar(100),
+repaglinide varchar(100),
+nateglinide varchar(100),
+chlorpropamide varchar(100),
+glimepiride varchar(100),
+acetohexamide varchar(100),
+glipizide varchar(100),
+glyburide varchar(100),
+tolbutamide varchar(100),
+pioglitazone varchar(100),
+rosiglitazone varchar(100),
+acarbose varchar(100),
+miglitol varchar(100),
+troglitazone varchar(100),
+tolazamide varchar(100),
+examide varchar(100),
+citoglipton varchar(100),
+insulin varchar(100),
+glyburide_metformin varchar(100),
+glipizide_metformin varchar(100),
+glimepiride_pioglitazone varchar(100),
+metformin_rosiglitazone varchar(100),
+metformin_pioglitazone varchar(100),
+change_ varchar(100),
+diabetesMed varchar(100),
+readmitted varchar(100),
+readmitted_flag boolean
+);
+
+set sql_mode = '';
+
+select * from healthcare limit 10;
+
+select count(*) from healthcare;
+
+
+-- check null values
+select count(*)
+from healthcare
+where readmitted_flag is null;
+
+
+-- check duplicates (if encounter_id exists)
+
+select encounter_id, count(*)
+from healthcare
+group by encounter_id
+having count(*) > 1;
+
+# Basic Exploratory Queries
+
+-- Readmission Distribution
+
+select readmitted_flag, count(*) as total
+from healthcare
+group by readmitted_flag;
+
+
+-- Average Time in Hospital
+
+select avg(time_in_hospital)
+from healthcare;
+
+
+-- Readmission by Age
+
+select age, readmitted_flag, count(*) as total
+from healthcare
+group by age, readmitted_flag
+order by age;
+
+
+-- readmission by number of medications
+
+select readmitted_flag, avg(num_medications)
+from healthcare
+group by readmitted_flag;
+
+
+# Readmission rate (KPI)
+
+select
+    (select count(*) from healthcare where readmitted_flag = "Yes") * 100 
+    /
+    (select count(*) from healthcare) as readmission_rate;
+    
+                  -- OR --
+                  
+select
+	sum(case when readmitted_flag = "Yes"
+    then 1 else 0 end) * 100.0 / count(*) 
+    as readmission_rate
+    from healthcare;
+    
+
+# Top factors Affecting readmission
+
+-- Time in Hospital Impact
+
+select readmitted_flag,
+avg(time_in_hospital) as avg_stay
+from healthcare
+group by readmitted_flag;
+
+
+-- Medication Impact
+
+select readmitted_flag,
+avg(num_medications) as avg_meds
+from healthcare
+group by readmitted_flag;
+
+-- difference rate
+
+SELECT 
+(
+    (SELECT AVG(num_medications) 
+     FROM healthcare 
+     WHERE readmitted_flag = 'Yes')
+    -
+    (SELECT AVG(num_medications) 
+     FROM healthcare 
+     WHERE readmitted_flag = 'No')
+) 
+* 100.0
+/
+(SELECT AVG(num_medications) 
+ FROM healthcare 
+ WHERE readmitted_flag = 'No')
+AS percentage_higher;
+
+
+-- Emergency Visits Impact
+
+select readmitted_flag,
+avg(number_emergency) as avg_emergency_visits
+from healthcare
+group by readmitted_flag;
+
+
+-- High Risk Age
+
+select age, 
+sum(case when readmitted_flag = "yes"
+then 1 else 0 end) * 100 / count(*) as readmission_rate
+from healthcare
+group by age
+order by readmission_rate desc;
