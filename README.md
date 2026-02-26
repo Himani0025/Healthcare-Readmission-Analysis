@@ -102,7 +102,7 @@ Python Analysis
 
 - Run all cells
 
-# [Power BI Dashboard]()
+# [Power BI Dashboard](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/Screenshot%202026-02-26%20103002.png)
 
 - Open Healthcare_Dashboard.pbix in Power BI Desktop
 
