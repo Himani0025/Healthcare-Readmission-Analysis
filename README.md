@@ -5,7 +5,7 @@ This project analyzes hospital patient readmission patterns to identify high-ris
 
 Hospital readmissions are a critical performance indicator in the healthcare industry, as frequent readmissions may indicate gaps in treatment, discharge planning, or patient monitoring.
 
-# Business Objective
+* Business Objective
 
 - Calculate overall hospital readmission rate
 
@@ -17,7 +17,7 @@ Hospital readmissions are a critical performance indicator in the healthcare ind
 
 - Build an interactive dashboard for insights
 
-# Tools & Technologies Used
+* Tools & Technologies Used
 
 - MySQL – Data cleaning and querying
 
@@ -27,7 +27,7 @@ Hospital readmissions are a critical performance indicator in the healthcare ind
 
 - Excel – Data validation
 
-# Project Structure
+* Project Structure
 Healthcare-Readmission-Analysis
 │
 ├── Dataset/
@@ -46,7 +46,7 @@ Healthcare-Readmission-Analysis
 │
 └── README.md
 
-# Key Analysis Performed
+* Key Analysis Performed
  1. Readmission Rate Calculation
 
 - Calculated overall readmission percentage using SQL and Python.
@@ -71,7 +71,7 @@ Identified departments with higher readmission frequency.
 
 - Distribution analysis
 
-# Dashboard Features (Power BI)
+* Dashboard Features (Power BI)
 
 - KPI Cards (Total Patients, Readmitted Patients, Readmission Rate %)
 
@@ -83,7 +83,7 @@ Identified departments with higher readmission frequency.
 
 - Drill-down capability
 
-#  Key Insights
+*  Key Insights
 
 - Elderly patients showed comparatively higher readmission rates
 
@@ -91,7 +91,7 @@ Identified departments with higher readmission frequency.
 
 - Readmission patterns varied significantly across age segments
 
-## How to Run
+* How to Run
 [Python Analysis](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/Healthcare_analysisi.ipynb)
 
 - Open healthcare_analysis.ipynb
@@ -102,13 +102,13 @@ Identified departments with higher readmission frequency.
 
 - Run all cells
 
-# [Power BI Dashboard](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/Screenshot%202026-02-26%20103002.png)
+* [Power BI Dashboard](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/Screenshot%202026-02-26%20103002.png)
 
 - Open Healthcare_Dashboard.pbix in Power BI Desktop
 
 - Refresh dataset if required
 
-# Skills Demonstrated
+* Skills Demonstrated
 
 - Data Cleaning & Transformation
 
@@ -122,7 +122,7 @@ Identified departments with higher readmission frequency.
 
 - Business Insight Generation
 
-## Author
+** Author
 
 Himani Sharma
 B.Tech (CSE - AI & ML)
