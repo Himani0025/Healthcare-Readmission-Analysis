@@ -34,13 +34,13 @@ Healthcare-Readmission-Analysis
 │     └── [clean_healthcare.csv](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/clean_healthcare_data.csv)
 │
 ├── SQL/
-│     └── [healthcare_queries.sql]()
+│     └── [healthcare_queries.sql](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/healthcare_queries.txt)
 │
 ├── Python/
-│     └── healthcare_analysis.ipynb
+│     └── [healthcare_analysis.ipynb](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/Healthcare_analysisi.ipynb)
 │
 ├── PowerBI/
-│     └── Healthcare_Dashboard.pbix
+│     └── [Healthcare_Dashboard.pbix](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/Screenshot%202026-02-26%20103002.png)
 │
 ├── Screenshots/
 │
