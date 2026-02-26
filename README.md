@@ -1,5 +1,5 @@
 ## Healthcare Readmission Analysis
-   # Project Overview
+   * Project Overview
 
 This project analyzes hospital patient readmission patterns to identify high-risk groups and key contributing factors. The objective is to understand trends in readmission based on patient demographics and hospital-related variables using SQL, Python, and Power BI.
 
