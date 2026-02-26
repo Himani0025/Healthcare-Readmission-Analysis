@@ -5,7 +5,7 @@ This project analyzes hospital patient readmission patterns to identify high-ris
 
 Hospital readmissions are a critical performance indicator in the healthcare industry, as frequent readmissions may indicate gaps in treatment, discharge planning, or patient monitoring.
 
-* Business Objective
+# Business Objective
 
 - Calculate overall hospital readmission rate
 
@@ -27,7 +27,7 @@ Hospital readmissions are a critical performance indicator in the healthcare ind
 
 - Excel – Data validation
 
-* Project Structure
+# Project Structure
 Healthcare-Readmission-Analysis
 │
 ├── Dataset/
@@ -46,7 +46,7 @@ Healthcare-Readmission-Analysis
 │
 └── README.md
 
-* Key Analysis Performed
+# Key Analysis Performed
  1. Readmission Rate Calculation
 
 - Calculated overall readmission percentage using SQL and Python.
@@ -57,7 +57,7 @@ Healthcare-Readmission-Analysis
 
  3. Department-wise Analysis
 
-Identified departments with higher readmission frequency.
+- Identified departments with higher readmission frequency.
 
  4. Exploratory Data Analysis (Python)
 
@@ -71,7 +71,7 @@ Identified departments with higher readmission frequency.
 
 - Distribution analysis
 
-* Dashboard Features (Power BI)
+# Dashboard Features (Power BI)
 
 - KPI Cards (Total Patients, Readmitted Patients, Readmission Rate %)
 
@@ -91,7 +91,7 @@ Identified departments with higher readmission frequency.
 
 - Readmission patterns varied significantly across age segments
 
-* How to Run
+# How to Run
 [Python Analysis](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/Healthcare_analysisi.ipynb)
 
 - Open healthcare_analysis.ipynb
@@ -102,7 +102,7 @@ Identified departments with higher readmission frequency.
 
 - Run all cells
 
-* [Power BI Dashboard](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/Screenshot%202026-02-26%20103002.png)
+# [Power BI Dashboard](https://github.com/Himani0025/Healthcare-Readmission-Analysis/blob/main/Screenshot%202026-02-26%20103002.png)
 
 - Open Healthcare_Dashboard.pbix in Power BI Desktop
 
@@ -122,7 +122,7 @@ Identified departments with higher readmission frequency.
 
 - Business Insight Generation
 
-** Author
+# Author
 
 Himani Sharma
 B.Tech (CSE - AI & ML)
